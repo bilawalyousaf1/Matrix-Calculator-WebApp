@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3x3 Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>3x3 Matrix Calculator</h1>
+
+      <!-- Navigation -->
+      <div class="nav">
+        <a href="index.html">2x2</a>
+        <a href="3x3.html" class="active">3x3</a>
+        <a href="4x4.html">4x4</a>
+      </div>
+
+      <!-- Hidden field for JS -->
+      <input type="hidden" id="pageType" value="3x3" />
+
+      <!-- Matrices -->
+      <div class="matrices">
+        <!-- Matrix A -->
+        <div class="box">
+          <h2>Matrix A</h2>
+          <div class="grid-3x3">
+            <input type="number" id="matrix-1" placeholder="0" value="" />
+            <input type="number" id="matrix-2" placeholder="0" value="" />
+            <input type="number" id="matrix-3" placeholder="0" value="" />
+            <input type="number" id="matrix-4" placeholder="0" value="" />
+            <input type="number" id="matrix-5" placeholder="0" value="" />
+            <input type="number" id="matrix-6" placeholder="0" value="" />
+            <input type="number" id="matrix-7" placeholder="0" value="" />
+            <input type="number" id="matrix-8" placeholder="0" value="" />
+            <input type="number" id="matrix-9" placeholder="0" value="" />
+          </div>
+        </div>
+
+        <!-- Plus Sign -->
+        <div class="symbol">+</div>
+
+        <!-- Matrix B -->
+        <div class="box">
+          <h2>Matrix B</h2>
+          <div class="grid-3x3">
+            <input type="number" id="matrix-10" placeholder="0" value="" />
+            <input type="number" id="matrix-11" placeholder="0" value="" />
+            <input type="number" id="matrix-12" placeholder="0" value="" />
+            <input type="number" id="matrix-13" placeholder="0" value="" />
+            <input type="number" id="matrix-14" placeholder="0" value="" />
+            <input type="number" id="matrix-15" placeholder="0" value="" />
+            <input type="number" id="matrix-16" placeholder="0" value="" />
+            <input type="number" id="matrix-17" placeholder="0" value="" />
+            <input type="number" id="matrix-18" placeholder="0" value="" />
+          </div>
+        </div>
+
+        <!-- Equals Sign -->
+        <div class="equals">=</div>
+
+        <!-- Result -->
+        <div class="box result">
+          <h2>Result</h2>
+          <div class="grid-3x3">
+            <input type="text" id="matrix-19" readonly />
+            <input type="text" id="matrix-20" readonly />
+            <input type="text" id="matrix-21" readonly />
+            <input type="text" id="matrix-22" readonly />
+            <input type="text" id="matrix-23" readonly />
+            <input type="text" id="matrix-24" readonly />
+            <input type="text" id="matrix-25" readonly />
+            <input type="text" id="matrix-26" readonly />
+            <input type="text" id="matrix-27" readonly />
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button onclick="add_matrix()">Add</button>
+        <button onclick="subtract_matrix()">Subtract</button>
+        <button onclick="multiply_matrix()">Multiply</button>
+        <button onclick="resetAll()">Reset</button>
+      </div>
+    </div>
+
+    <script src="3x3.js"></script>
+  </body>
+</html>
